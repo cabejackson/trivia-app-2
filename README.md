@@ -36,24 +36,24 @@ OR
 
 ## Storytime
 
-As an avid reader myself, I'm always looking for my next great read! This app can help users do just that, by challenging their reading tastes and prompting them to read books they might've otherwise never considered.
+Finding creative ways to learn new things has been a goal of mine this year!
 
-This app will prompt the user to declare how many books they plan to read in the month (or any time frame, like spring break for example). Now, let's say they chose 4 books! The user will then view TBR cards and click on the cards to reveal the prompts on the backside. These prompts could be like, "Read a book with an elder protagonist" or "Read an anthology". Again, these prompts encourage readers to read outside of their comfort zones, but if the user feels like, "oh I already read a ton of anthology books", then they can flip that card back over and click another one! After viewing these prompts, users can then jot down their reading goals and click "Save This Goal".
+This app can help users learn fun facts by challenging them to answer a series of random questions.
 
-Saving their goals is advantageous, because it allows users to keep track of prompts they've already completed. Note: saving goals is only available for users that have created an account.
+Some things I'm particularly proud of within this app include:
+
+- use of React Hooks
+- implementation of smoke tests
+- implementation of React Router (link, switch, route)
+- creating a custom 404 not Found Page
+- following A11Y checklist
 
 Fun tidbit:
-Will the user be repeatedly shown the same TBR cards? No way, lol that's no fun! Each time the user logs in and navigates to the "Create" page, the TBR cards are randomly generator to ensure the same cards aren't shown.
-
-For example if the user says "show me 2 TBR cards on Wednesday" like this:
-[Wednesday](https://imgur.com/a/gct0JEY)
-
-Then on Thursday, the user says "show me 2 TBR cards" again different cards will be shown, like this:
-[Thursday](https://imgur.com/a/nVWjIKN)
+I learned a lot about background image positioning and accessibility concerns while developing this app!
 
 ## Quick App Demo
 
-![giphy](https://media.giphy.com/media/AUJnEt2yVTnyfViugs/giphy.gif)
+![giphy](https://media.giphy.com/media/ZnViXEgexx3WSrxoEi/giphy.gif)
 
 ## A More Detailed Look
 
@@ -61,11 +61,13 @@ Then on Thursday, the user says "show me 2 TBR cards" again different cards will
 
 Note: component names are listed in the green boxes
 
-- [START HERE](https://imgur.com/a/BWxNwNw)
-- [ABOUT THE DEV](https://imgur.com/a/I0Ag4tv)
+- [START HERE](https://imgur.com/a/OOpgrFl)
+<!-- - [ABOUT THE DEV](https://imgur.com/a/I0Ag4tv) -->
+
 <!-- - [SIGN UP](https://imgur.com/a/k8Repzt)
 - [LOGIN](https://imgur.com/a/MHjs696) -->
-- [GAME](https://imgur.com/a/Foui1Vd)
+
+- [GAME](https://imgur.com/rlqY6t7)
 
 ## Tech Stack
 
@@ -133,7 +135,7 @@ npm start
 
 ### I'm working dilligently to incorporate these next user stories!
 
-- Users can see a congrats! picture if they score higher than 50%
+- Users can see a 'congrats!' picture if they score higher than 50%
 - Users can login to save their scores
 
 ## About Me
