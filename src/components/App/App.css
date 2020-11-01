@@ -1,0 +1,22 @@
+body {
+    background-color: bisque;
+    margin: 0px;
+}
+
+
+Header {
+    background-color: darkgray;
+    margin: 0px;
+    /* text-align: left; */
+}
+
+
+h2,
+h3,
+p {
+    color: Black
+}
+
+/* .all {
+    background-color: bisque;
+} */

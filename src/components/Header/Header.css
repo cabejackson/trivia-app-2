@@ -1,0 +1,69 @@
+body {
+    /* background-color: #30220d; */
+    background-color: bisque;
+    margin: 0px;
+}
+
+.header__back {
+    background-color: #30220d;
+    /* background-color: #419D78; */
+
+}
+
+.header {
+    padding: 0px;
+
+    padding-left: 60px;
+    text-align: center;
+    background: black;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+
+h2,
+h3,
+p {
+    color: Black
+}
+
+.welcome {
+    color: white;
+    margin: 0px;
+    text-align: left;
+
+}
+
+.navBar__ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #ac8e6a;
+
+
+
+}
+
+.logo img {
+
+    margin: -30px;
+    margin-right: 200px;
+    float: left;
+    height: 100px;
+}
