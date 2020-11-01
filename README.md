@@ -45,7 +45,7 @@ Some things I'm particularly proud of within this app include:
 - use of React Hooks
 - implementation of smoke tests
 - implementation of React Router (link, switch, route)
-- creating a custom 404 not Found Page
+- creating a custom 404 not Found Page you can see my 404 page [here](https://trivia.cabejackson.vercel.app/lol)
 - following A11Y checklist
 
 Fun tidbit:
