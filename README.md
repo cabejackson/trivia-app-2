@@ -3,7 +3,7 @@
 This app allows users to play a trivia game!
 Playing games also encourages users to take a break away from their everyday stressors!
 
-Here's the deployed version of `Trivia App`: [Trivia App](https://bookish-client.vercel.app/)
+Here's the deployed version of `Trivia App`: [Trivia App](https://trivia-rose.vercel.app/)
 
 <!-- ### Demo Accounts:
 
