@@ -8,18 +8,26 @@ export default class Landing extends Component {
     render() {
         return (
             <div className="content-img-background" >
-                <div className="btn">
-                    <h1 className="landing__instruct">CLICK THE <br />BUTTON TO BEGIN</h1>
-                    <button className="start__quiz_btn">
-                        <NavButton
-                            tag={Link}
-                            to="/game"
-                            type="button"
-                            className="NavButton__startQuiz"
-                        >
-                            START GAME!
+                <div className="mainBox">
+                    <div className="boarderLine">
+                        <div className="cutesyLine"></div>
+                        <h3 className="catchyPhrase">LET'S GET STARTED!</h3>
+                        <div className="cutesyLine"></div>
+
+                        <div className="btn">
+                            <h1 className="catchyPhrase">CLICK <br /> 'START GAME'<br /> TO BEGIN</h1>
+                            <button className="start__quiz_btn">
+                                <NavButton
+                                    tag={Link}
+                                    to="/game"
+                                    type="button"
+                                    className="NavButton__startQuiz"
+                                >
+                                    START GAME!
                     </NavButton>
-                    </button>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         )

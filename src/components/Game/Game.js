@@ -26,7 +26,7 @@ export default function Trivia() {
                 { answerText: 'Et tu, Brute?', isCorrect: true },
                 { answerText: 'Aegri somnia vana', isCorrect: false },
             ],
-            correct: 'Devmynd',
+            correct: 'Et tu, Brute?',
 
 
         },
@@ -38,7 +38,7 @@ export default function Trivia() {
                 { answerText: 'Ambush', isCorrect: true },
                 { answerText: 'Destruction', isCorrect: false },
             ],
-            correct: 'Devmynd',
+            correct: 'Ambush',
 
         },
         {
@@ -49,11 +49,73 @@ export default function Trivia() {
                 { answerText: '31 mph', isCorrect: true },
                 { answerText: '9 mph', isCorrect: false },
             ],
-            correct: 'Devmynd',
+            correct: '31 mph',
+
+        },
+        {
+            questionText: 'A cat can jump to _____ times its own height:',
+            answerOptions: [
+                { answerText: '3', isCorrect: false },
+                { answerText: '7', isCorrect: false },
+                { answerText: '5', isCorrect: true },
+                { answerText: '9', isCorrect: false },
+            ],
+            correct: '5',
+
+        }, {
+            questionText: `What is the only letter that doesn't appear in a US state name?`,
+            answerOptions: [
+                { answerText: 'M', isCorrect: false },
+                { answerText: 'X', isCorrect: false },
+                { answerText: 'Q', isCorrect: true },
+                { answerText: 'Z', isCorrect: false },
+            ],
+            correct: 'Q',
+
+        }, {
+            questionText: 'What is the name for a cow-bison hybrid?',
+            answerOptions: [
+                { answerText: 'Cowson', isCorrect: false },
+                { answerText: 'Bicow', isCorrect: false },
+                { answerText: 'Beefalo', isCorrect: true },
+                { answerText: 'Mooson', isCorrect: false },
+            ],
+            correct: 'Beefalo',
+
+        }, {
+            questionText: 'What is the largest freshwater lake in the world?',
+            answerOptions: [
+                { answerText: 'Wild Wild West', isCorrect: false },
+                { answerText: 'War World Web', isCorrect: false },
+                { answerText: 'World Wide Web', isCorrect: true },
+                // { answerText: '9 mph', isCorrect: false },
+            ],
+            correct: 'World Wide Web',
+
+        }, {
+            questionText: 'In a game of bingo, what number is represented by the name two little ducks?',
+            answerOptions: [
+                { answerText: '20', isCorrect: false },
+                { answerText: '55', isCorrect: false },
+                { answerText: '22', isCorrect: true },
+                { answerText: '77', isCorrect: false },
+            ],
+            correct: '22',
+
+        }, {
+            questionText: 'According to Greek mythology, who was the first woman on Earth?',
+            answerOptions: [
+                { answerText: 'Lilith', isCorrect: false },
+                { answerText: 'Eve', isCorrect: false },
+                { answerText: 'Pandora', isCorrect: true },
+                { answerText: 'Hera', isCorrect: false },
+            ],
+            correct: 'Pandora',
 
         },
     ]
 
+    //Future implementation: adding a sort method, so the same order of questions isn't repeated
     // .sort(
     //     () => 0.5 - Math.random()
     // );
@@ -66,6 +128,7 @@ export default function Trivia() {
     const [score, setScore] = useState(0)
 
     //changes the current question whenever button is clicked
+    //informs user of correct answer
     const handleAnswerButtonClick = (isCorrect) => {
         // const correct = questions[answerOptions].correct
         if (isCorrect === true) {
@@ -74,48 +137,41 @@ export default function Trivia() {
         }
         if (isCorrect === false) {
             //alert("yikes almost tho!")
-            //alert("That was incorrect. The correct answer is " + correctAnswer)
-            alert(`yikes almost tho! The correct answer is ${JSON.stringify(questions[currentQuestion].correct)}`)
-            // console.log(questions[1].answerText)
-            console.log(`yikes almost tho! The correct answer is ${JSON.stringify(questions[currentQuestion].correct)}`)
-            //alert(questions[currentQuestion].answerText)
+            alert(`yikes almost though! The correct answer is ${JSON.stringify(questions[currentQuestion].correct)}`)
+            // console.log(`yikes almost tho! The correct answer is ${JSON.stringify(questions[currentQuestion].correct)}`)
 
         }
 
 
 
 
-        // create variable to increments by 1
+        // create variable to increment question by 1
         const nextQuestion = currentQuestion + 1;
-        //if there's still questions do display the questions
+        //if there's still questions, display the questions
         if (nextQuestion < questions.length) {
             //changes the state object to whatever the next question is
             setCurrentQuestion(nextQuestion)
         }
-        //else show score
+        //otherwise show score
         else {
             setShowScore(true)
-            console.log(`thanks for finishing!`) //maybe component for end of quiz or results
+            console.log(`thanks for finishing!`) //maybe add component for end of quiz or results
 
         }
 
     }
     // console.log("outside", questions[0].questionText)
+    // maybe add photos to each question + photo at the end with congrats or yikes
     //wrapped in ternary like the login component from capstone
     return (
         <div className='the__questions'>
-            {/* HINT: replace "false" with logic to display the 
-      score when the user has answered all the questions */}
 
             {/* <p>{questions[0].questionText}</p> */}
             {showScore ? (
-                <div className='score-section'>You scored {score} out of {questions.length}</div>
+                <div className='score-section'>You scored {score} out of {questions.length}!</div>
             ) : (
                     <>
                         <div className='question-section'>
-
-
-                            {/* <div className='question-text'>{questions[currentQuestion].questionText}</div> */}
                             <div className='question-text'>{questions[currentQuestion].questionText}</div>
                         </div>
                         <div className='answer-section'>

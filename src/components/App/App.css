@@ -14,7 +14,8 @@ Header {
 h2,
 h3,
 p {
-    color: Black
+    color: Black;
+    font-family: "open sans", "sans serif";
 }
 
 /* .all {
