@@ -1,0 +1,104 @@
+h2,
+h3,
+p {
+    color: Black;
+    font-family: "open sans", "sans serif";
+}
+
+.body___divForEntirePage-about {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+
+}
+
+
+.mainBox-about {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    max-width: 65%;
+    /* padding: 30%; */
+    padding: 90px 0px 0px 100px;
+}
+
+.content-img-background-about {
+    background-color: #6e8f7d;
+    background-image: url("./aboutdev.jpg");
+    height: 1000px;
+    width: auto;
+    background-size: cover;
+    background-position: 25% 75%;
+    /* background-position: right 95% bottom 45%; */
+    /* background-position: 60%; */
+    /* background-position: center; */
+    background-repeat: no-repeat;
+}
+
+.cutesyLine-about {
+    width: 75px;
+    height: 3px;
+    background: #ffe680;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.catchyPhrase-about {
+    font-family: "open sans", "sans serif";
+    font-size: 15pt;
+    color: #000;
+    font-style: italic;
+}
+
+.boarderLine-about {
+    display: inline-block;
+    text-align: center;
+    padding: 9px;
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    font-family: "open sans", "sans-serif";
+    font-size: 16px;
+    width: 300px;
+    border: 5px solid #1a2232;
+    border-radius: 7px;
+    padding-top: 32px;
+    padding-bottom: 40px;
+}
+
+.titleText-about {
+    font-family: "open sans", "sans serif";
+    font-size: 14pt;
+    font-weight: bold;
+    color: white;
+}
+
+.about___btn {
+    width: 145px;
+    height: 35px;
+    background: #ffe680;
+    text-align: center;
+    display: inline-block;
+    font-family: "open sans";
+    color: black;
+    font-weight: bold;
+    /* padding-top: 10px; */
+    /* margin-top: 20px; */
+    margin-bottom: -20px;
+    z-index: 1000;
+    position: relative;
+}
+
+.about___btn a {
+    text-decoration: none;
+    color: black;
+
+
+}
+
+
+.about___btn:hover {
+    border: 1px solid white;
+}

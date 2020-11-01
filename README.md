@@ -62,7 +62,7 @@ I learned a lot about background image positioning and accessibility concerns wh
 Note: component names are listed in the green boxes
 
 - [START HERE](https://imgur.com/a/OOpgrFl)
-<!-- - [ABOUT THE DEV](https://imgur.com/a/I0Ag4tv) -->
+- [ABOUT THE DEV](https://imgur.com/a/UdGQvEm)
 
 <!-- - [SIGN UP](https://imgur.com/a/k8Repzt)
 - [LOGIN](https://imgur.com/a/MHjs696) -->
@@ -136,6 +136,8 @@ npm start
 ### I'm working dilligently to incorporate these next user stories!
 
 - Users can see a 'congrats!' picture if they score higher than 50%
+- Users can input the number of trivia questions they'd like to be asked
+- Users can view randomly assorted questions each time they play the game
 - Users can login to save their scores
 
 ## About Me

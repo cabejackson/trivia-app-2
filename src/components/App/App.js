@@ -4,6 +4,7 @@ import Game from "../Game/Game";
 import Landing from "../Landing/Landing";
 import ApiContext from "../../contexts/ApiContext";
 import Header from "../Header/Header";
+import About from "../About/About";
 import NotFound from "../NotFound/NotFound"
 import ErrorBoundary from "../../ErrorBoundary"
 
@@ -26,6 +27,7 @@ export default class App extends Component {
           <Route exact path="/" component={Landing} />
           {/* <Route exact path="/game" component={Game} /> */}
           <Route exact path="/game" component={Game} />
+          <Route exact path="/about" component={About} />
           <Route component={NotFound} />
         </Switch>
       </>
