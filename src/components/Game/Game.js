@@ -7,7 +7,7 @@ export default function Trivia() {
 
     const questions = [
         {
-            questionText: 'What was Tandem previous name?',
+            questionText: `What was Tandem's previous name?`,
             answerOptions: [
                 { answerText: 'Tandem', isCorrect: false },
                 { answerText: 'Burger Shack', isCorrect: false },
