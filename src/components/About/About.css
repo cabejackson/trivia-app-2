@@ -84,8 +84,6 @@ p {
     font-family: "open sans";
     color: black;
     font-weight: bold;
-    /* padding-top: 10px; */
-    /* margin-top: 20px; */
     margin-bottom: -20px;
     z-index: 1000;
     position: relative;

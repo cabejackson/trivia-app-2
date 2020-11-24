@@ -12,12 +12,10 @@ import ErrorBoundary from "../../ErrorBoundary"
 export default class App extends Component {
 
 
-  state = {
-    score: 0
-  }
+  // state = {
+  // }
 
 
-  //handleUpdateScore
 
 
   renderMainRoutes() {
@@ -25,7 +23,6 @@ export default class App extends Component {
       <>
         <Switch>
           <Route exact path="/" component={Landing} />
-          {/* <Route exact path="/game" component={Game} /> */}
           <Route exact path="/game" component={Game} />
           <Route exact path="/about" component={About} />
           <Route component={NotFound} />

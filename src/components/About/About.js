@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import ApiContext from "../../contexts/ApiContext";
-import NavButton from "../NavButton/NavButton";
+//import NavButton from "../NavButton/NavButton";
 import "./About.css";
 
 

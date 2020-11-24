@@ -130,15 +130,12 @@ export default function Trivia() {
     //changes the current question whenever button is clicked
     //informs user of correct answer
     const handleAnswerButtonClick = (isCorrect) => {
-        // const correct = questions[answerOptions].correct
         if (isCorrect === true) {
             alert("you got it!")
             setScore(score + 1);
         }
         if (isCorrect === false) {
-            //alert("yikes almost tho!")
             alert(`yikes almost though! The correct answer is ${JSON.stringify(questions[currentQuestion].correct)}`)
-            // console.log(`yikes almost tho! The correct answer is ${JSON.stringify(questions[currentQuestion].correct)}`)
 
         }
 
@@ -155,18 +152,16 @@ export default function Trivia() {
         //otherwise show score
         else {
             setShowScore(true)
-            console.log(`thanks for finishing!`) //maybe add component for end of quiz or results
+            console.log(`thanks for finishing!`)
 
         }
 
     }
-    // console.log("outside", questions[0].questionText)
     // maybe add photos to each question + photo at the end with congrats or yikes
-    //wrapped in ternary like the login component from capstone
+    //wrapped in ternary 
     return (
         <div className='the__questions'>
 
-            {/* <p>{questions[0].questionText}</p> */}
             {showScore ? (
                 <div className='score-section'>You scored {score} out of {questions.length}!</div>
             ) : (
@@ -175,7 +170,17 @@ export default function Trivia() {
                             <div className='question-text'>{questions[currentQuestion].questionText}</div>
                         </div>
                         <div className='answer-section'>
-                            {questions[currentQuestion].answerOptions.map((answerOption, key) => <div key={key} className="question__options"><button className="questions__button" key={key} onClick={() => handleAnswerButtonClick(answerOption.isCorrect)}>{answerOption.answerText}</button><br /></div>)}
+                            {questions[currentQuestion].answerOptions.map((answerOption, key) =>
+                                <div key={key} className="question__options">
+                                    <button
+                                        className="questions__button"
+                                        key={key}
+                                        onClick={() => handleAnswerButtonClick(answerOption.isCorrect)}>
+                                        {answerOption.answerText}
+                                    </button>
+                                    <br />
+                                </div>
+                            )}
 
                         </div>
                         <div className='question-count'>
