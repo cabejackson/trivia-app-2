@@ -172,7 +172,7 @@ export default function Trivia() {
                             <div className='question-text'>{questions[currentQuestion].questionText}</div>
                         </div>
                         <div className='answer-section'>
-                            {questions[currentQuestion].answerOptions.sort(sortAlphaly).map((answerOption, key) =>
+                            {questions[currentQuestion].answerOptions.sort(sortRandomly).map((answerOption, key) =>
                                 <div key={key} className="question__options">
                                     <button
                                         className="questions__button"
