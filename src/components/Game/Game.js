@@ -3,6 +3,8 @@ import "./Game.css";
 
 export default function Trivia() {
 
+    const sortRandomly = () => 0.5 - Math.random()
+    const sortAlphaly = (a, b) => a.answerText.toLowerCase() > b.answerText.toLowerCase() ? 1 : -1
 
 
     const questions = [
@@ -113,12 +115,10 @@ export default function Trivia() {
             correct: 'Pandora',
 
         },
-    ]
+    ].sort(sortRandomly);
+
 
     //Future implementation: adding a sort method, so the same order of questions isn't repeated
-    // .sort(
-    //     () => 0.5 - Math.random()
-    // );
 
     //state objects/ state variables
     const [currentQuestion, setCurrentQuestion] = useState(0) //useState(0) makes it start at the beginning of the array
@@ -126,6 +126,8 @@ export default function Trivia() {
     const [showScore, setShowScore] = useState(false) //boolean instead of number
 
     const [score, setScore] = useState(0)
+
+
 
     //changes the current question whenever button is clicked
     //informs user of correct answer
@@ -152,7 +154,7 @@ export default function Trivia() {
         //otherwise show score
         else {
             setShowScore(true)
-            console.log(`thanks for finishing!`)
+            //console.log(`thanks for finishing!`)
 
         }
 
@@ -170,7 +172,7 @@ export default function Trivia() {
                             <div className='question-text'>{questions[currentQuestion].questionText}</div>
                         </div>
                         <div className='answer-section'>
-                            {questions[currentQuestion].answerOptions.map((answerOption, key) =>
+                            {questions[currentQuestion].answerOptions.sort(sortAlphaly).map((answerOption, key) =>
                                 <div key={key} className="question__options">
                                     <button
                                         className="questions__button"
